@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+  .zoom:hover {
+  transform: scale(1.5);
+}
+  div.transbox {
+  font-family: 'Oswald', sans-serif;
+  margin: 5px;
+  background-color: #85929E;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #85929E;
+}
+
+div.b {
+  font-size: large;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+  font-family: 'Oswald', sans-serif; 
+  background-image: url('img/food.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #AEB6BF;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.active {
+  background-color: #5D6D7E;
+}
+.frame {
+  height: 250px;
+    width: 500px;
+border: 15px solid #ccc;
+margin: 6px;
+}
+</style>
+<style>
+/* Style The Dropdown Button */
+.dropbtn {
+  margin: 5px;
+  background-color: #5D6D7E;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #AEB6BF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #5D6D7E;
+}
+p {
+  padding: 1px;
+   color: white;
+   font-size: large;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+	<div class="b">
+  <li><a href="MainSite.html">Home</a></li>
+  <li><a class="active" href="Menu.html">Menu</a></li>
+  <li><a href="Plazhi.html">Plazhi</a></li>
+  <li><a href="SignUp.html">Feedback</a></li>
+</ul>
+	</div>
+  <div class="dropdown">
+  <button class="dropbtn">Produktet</button>
+  <div class="dropdown-content">
+    <a href="Menu.html">Pijet</a>
+    <a href="Food.html">Ushqimi</a>
+    <a href="Cmimet.html">Menuja</a>
+  </div>
+</div>
+<br>
+<br>
+<div class="background">
+  <div class="transbox">
+<p>Pjatat Kryesore</p>
+</div>
+</div>
+  <div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/beef.jpg" style="width:100%">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/fries.jpg" style="width:100%">
+  </div>
+</div>
+ <div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/lasagna.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/onion.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/soup.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/spagheti.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/toast.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/humburger.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/fish.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/octopus.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/shrims.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/seafood.jpeg" style="width:100%">
+  </div>
+</div>
+<br>
+<br>
+<div class="background">
+  <div class="transbox">
+<p>Embelsirat</p>
+</div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/cake.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/ice-cream.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="frame" class="column">
+    <img class="zoom" src="img/pancake.jpg" style="width:100%;">
+  </div>
+  <div class="frame" class="column">
+    <img class="zoom" src="img/brown.jpg" style="width:100%">
+  </div>
+</div>
+</body>
+</html>

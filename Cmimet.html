@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+  .zoom:hover {
+  transform: scale(1.5);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #85929E;
+}
+
+div.b {
+  font-size: large;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+  font-family: 'Oswald', sans-serif; 
+  background-image: url('img/food.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #AEB6BF;
+}
+.active {
+  background-color: #5D6D7E;
+}
+</style>
+<style>
+
+.dropbtn {
+  background-color: #5D6D7E;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+   margin: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #AEB6BF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #5D6D7E;
+}
+.Menu{
+  margin-left: 300px;
+width: 400px;
+height: 600px;
+}
+.frame {
+  width: 400px;
+height: 600px;
+border: 15px solid #ccc;
+margin-left: 300px;
+}
+</style>
+</head>
+<body>
+<ul>
+  <div class="b">
+  <li><a href="MainSite.html">Home</a></li>
+  <li><a class="active" href="Menu.html">Menu</a></li>
+  <li><a href="Plazhi.html">Plazhi</a></li>
+  <li><a href="SignUp.html">Feedback</a></li>
+</ul>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Produktet</button>
+  <div class="dropdown-content">
+    <a href="Menu.html">Pijet</a>
+    <a href="Food.html">Ushqimi</a>
+    <a href="Cmimet.html">Menuja</a>
+  </div>
+  <center>
+  <img class="frame" class="Menu" src="img/Menu.png">
+</center>
+</body>
+</html>
